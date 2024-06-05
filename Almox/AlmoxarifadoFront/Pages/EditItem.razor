@@ -1,0 +1,42 @@
+@page "/edititem/{id}"
+@using AlmoxarifadoModel
+@using AlmoxarifadoFront.Services
+@inject NavigationManager NavigationManager
+@inject AlmoxarifadoService AlmoxarifadoService
+
+<PageTitle>Edit Item</PageTitle>
+
+<h3>Editar Item</h3>
+
+<div class="edit-item-form">
+    <input type="text" @bind="editedItem.Item" class="form-control mb-2" placeholder="Item">
+    <input type="number" @bind="editedItem.Quantidade" class="form-control mb-2" placeholder="Quantidade">
+    <input type="text" @bind="editedItem.Categoria" class="form-control mb-2" placeholder="Categoria">
+    <button class="btn btn-primary" @onclick="SaveChanges">Salvar Alterações</button>
+</div>
+
+<button class="btn btn-secondary mt-2" @onclick="Cancel">Cancelar</button>
+
+@code {
+    [Parameter]
+    public string Id { get; set; }
+
+    private Almoxarifado editedItem = new Almoxarifado();
+
+    protected override async Task OnInitializedAsync()
+    {
+        var item = await AlmoxarifadoService.GetItemById(Id);
+        editedItem = item;
+    }
+
+    private async Task SaveChanges()
+    {
+        await AlmoxarifadoService.UpdateItem(editedItem);
+        NavigationManager.NavigateTo("/listaitem");
+    }
+
+    private void Cancel()
+    {
+        NavigationManager.NavigateTo("/listaitem");
+    }
+}

@@ -1,0 +1,33 @@
+@page "/createitem"
+@using AlmoxarifadoModel
+@using AlmoxarifadoFront.Services
+@inject NavigationManager NavigationManager
+@inject AlmoxarifadoService AlmoxarifadoService
+
+<PageTitle>Create Item</PageTitle>
+
+<h3>Adicionar Novo Item</h3>
+
+<div class="add-item-form">
+    <input type="text" @bind="newItem.Item" class="form-control mb-2" placeholder="Item">
+    <input type="number" @bind="newItem.Quantidade" class="form-control mb-2" placeholder="Quantidade">
+    <input type="text" @bind="newItem.Categoria" class="form-control mb-2" placeholder="Categoria">
+    <button class="btn btn-success" @onclick="AddNewItem">Adicionar Item</button>
+</div>
+
+<button class="btn btn-secondary mt-2" @onclick="NavigateBackToListPage">Voltar</button>
+
+@code {
+    private Almoxarifado newItem = new Almoxarifado();
+
+    async Task AddNewItem()
+    {
+        await AlmoxarifadoService.AddItem(newItem);
+        NavigationManager.NavigateTo("/listaitem");
+    }
+
+    private void NavigateBackToListPage()
+    {
+        NavigationManager.NavigateTo("/listaitem");
+    }
+}

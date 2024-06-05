@@ -1,0 +1,106 @@
+@page "/listaitem"
+@using AlmoxarifadoFront.Services
+@using AlmoxarifadoModel
+@inject AlmoxarifadoService AlmoxarifadoService
+@inject NavigationManager NavigationManager
+
+<PageTitle>Fetch Data</PageTitle>
+
+<h3>Items do Almoxarifado</h3>
+
+<div class="sorting-buttons">
+    <button @onclick="SortByItem">Ordenar por Item</button>
+    <button @onclick="SortByCategory">Ordenar por Categoria</button>
+</div><br>
+
+<div>
+    <button class="btn btn-primary" @onclick="NavigateToCreateItemPage">Adicionar Novo Item</button>
+</div><br>
+
+<div class="search-box input-group mb-3">
+    <input type="text" @bind="searchTerm" class="form-control" placeholder="Pesquisar por item ou categoria">&nbsp;
+    <div class="input-group-append">
+        <button class="btn btn-primary">Pesquisar</button>
+        <button class="btn btn-secondary" @onclick="ClearSearch">Limpar</button>
+    </div>
+</div>
+
+@if (items == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Quantidade</th>
+                <th>Categoria</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in FilteredItems)
+            {
+                <tr>
+                    <td>@item.Item</td>
+                    <td>@item.Quantidade</td>
+                    <td>@item.Categoria</td>
+                    <td>
+                        <button class="btn btn-primary btn-sm" @onclick="() => EditItem(item)">Editar</button>
+                        <button class="btn btn-danger btn-sm" @onclick="() => DeleteItem(item.Id)">Excluir</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<Almoxarifado> items;
+    private string searchTerm = "";
+
+    protected override async Task OnInitializedAsync()
+    {
+        items = await AlmoxarifadoService.GetItems();
+    }
+
+    private List<Almoxarifado> FilteredItems =>
+        string.IsNullOrWhiteSpace(searchTerm) ?
+        items :
+        items.Where(i =>
+            i.Item.Contains(searchTerm, StringComparison.OrdinalIgnoreCase) ||
+            i.Categoria.Contains(searchTerm, StringComparison.OrdinalIgnoreCase)
+        ).ToList();
+
+    void SortByItem()
+    {
+        items = items.OrderBy(i => i.Item).ToList();
+    }
+
+    void SortByCategory()
+    {
+        items = items.OrderBy(i => i.Categoria).ToList();
+    }
+
+    void ClearSearch()
+    {
+        searchTerm = "";
+    }
+
+    private void NavigateToCreateItemPage()
+    {
+        NavigationManager.NavigateTo("/createitem");
+    }
+
+    private void EditItem(Almoxarifado item)
+    {
+        NavigationManager.NavigateTo($"/edititem/{item.Id}");
+    }
+
+    private void DeleteItem(string itemId)
+    {
+        NavigationManager.NavigateTo($"/excluiritem/{itemId}");
+    }
+}
