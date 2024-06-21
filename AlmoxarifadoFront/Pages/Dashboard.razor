@@ -1,0 +1,166 @@
+﻿@page "/dashboard"
+@using AlmoxarifadoFront.DTO
+@using AlmoxarifadoFront.Helpers
+@using System.Net.Http
+@using System.Text.Json
+@inject Api api
+
+<h1>Dashboard</h1>
+
+@if (Produtos == null || Almoxarifados == null)
+{
+    <p><strong>Carregando...</strong></p>
+}
+else
+{
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Filtros de Produtos</h2>
+            <div class="input-group mb-3">
+                <input @bind="ProdutoNomeFiltro" type="text" class="form-control" placeholder="Filtrar por Nome" />
+            </div>
+            <div class="input-group mb-3">
+                <input @bind="ProdutoQuantidadeFiltro" type="number" class="form-control" placeholder="Filtrar por Quantidade" />
+            </div>
+            <div class="input-group mb-3">
+                <input @bind="ProdutoTipoFiltro" type="text" class="form-control" placeholder="Filtrar por Tipo" />
+            </div>
+            <div class="input-group mb-3">
+                <input @bind="ProdutoCategoriaFiltro" type="text" class="form-control" placeholder="Filtrar por Categoria" />
+            </div>
+            <div class="input-group mb-3">
+                <button class="btn btn-primary" @onclick="FiltrarProdutos">Filtrar</button>
+                <button class="btn btn-secondary" @onclick="LimparFiltroProdutos">Limpar</button>
+            </div>
+            @if (FilteredProdutos.Count == 0)
+            {
+                <p class="text-danger">Nenhum produto encontrado.</p>
+            }
+        </div>
+        <div class="col-md-12">
+            <h2>Filtros de Almoxarifados</h2>
+            <div class="input-group mb-3">
+                <input @bind="EmpresaNomeFiltro" type="text" class="form-control" placeholder="Filtrar por Empresa" />
+            </div>
+            <div class="input-group mb-3">
+                <input @bind="EmpresaCNPJFiltro" type="text" class="form-control" placeholder="Filtrar por CNPJ" />
+            </div>
+            <div class="input-group mb-3">
+                <button class="btn btn-primary" @onclick="FiltrarAlmoxarifados">Filtrar</button>
+                <button class="btn btn-secondary" @onclick="LimparFiltroAlmoxarifados">Limpar</button>
+            </div>
+            @if (FilteredAlmoxarifados.Count == 0)
+            {
+                <p class="text-danger">Nenhuma empresa encontrada.</p>
+            }
+        </div>
+    </div>
+    <hr />
+    <div class="row">
+        <div class="col-md-6">
+            <h3>Resumo de Produtos</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Quantidade</th>
+                        <th scope="col">Tipo</th>
+                        <th scope="col">Categoria</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var produto in FilteredProdutos)
+                    {
+                        <tr>
+                            <td>@produto.Nome</td>
+                            <td>@produto.Quantidade</td>
+                            <td>@produto.Tipo</td>
+                            <td>@produto.Categoria</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-6">
+            <h3>Resumo de Almoxarifados</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Empresa</th>
+                        <th scope="col">CNPJ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var almoxarifado in FilteredAlmoxarifados)
+                    {
+                        <tr>
+                            <td>@almoxarifado.Empresa</td>
+                            <td>@almoxarifado.CNPJ</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+}
+
+@code {
+    private IList<ProdutoDTO>? Produtos { get; set; } = null;
+    private IList<ProdutoDTO>? FilteredProdutos { get; set; } = null;
+    private IList<AlmoxarifadoDTO>? Almoxarifados { get; set; } = null;
+    private IList<AlmoxarifadoDTO>? FilteredAlmoxarifados { get; set; } = null;
+    private string ProdutoNomeFiltro { get; set; } = string.Empty;
+    private int? ProdutoQuantidadeFiltro { get; set; } = null;
+    private string ProdutoTipoFiltro { get; set; } = string.Empty;
+    private string ProdutoCategoriaFiltro { get; set; } = string.Empty;
+    private string EmpresaNomeFiltro { get; set; } = string.Empty;
+    private string EmpresaCNPJFiltro { get; set; } = string.Empty;
+
+    protected override async Task OnInitializedAsync()
+    {
+        Produtos = await api.GetAsync<ProdutoDTO>("/api/produto");
+        Almoxarifados = await api.GetAsync<AlmoxarifadoDTO>("/api/almoxarifado");
+        FilteredProdutos = Produtos;
+        FilteredAlmoxarifados = Almoxarifados;
+    }
+
+    private void FiltrarProdutos()
+    {
+        if (Produtos != null)
+        {
+            FilteredProdutos = Produtos.Where(p =>
+                (string.IsNullOrEmpty(ProdutoNomeFiltro) || p.Nome.Contains(ProdutoNomeFiltro, StringComparison.OrdinalIgnoreCase)) &&
+                (!ProdutoQuantidadeFiltro.HasValue || p.Quantidade >= ProdutoQuantidadeFiltro.Value) &&
+                (string.IsNullOrEmpty(ProdutoTipoFiltro) || p.Tipo.Contains(ProdutoTipoFiltro, StringComparison.OrdinalIgnoreCase)) &&
+                (string.IsNullOrEmpty(ProdutoCategoriaFiltro) || p.Categoria.Contains(ProdutoCategoriaFiltro, StringComparison.OrdinalIgnoreCase))
+            ).ToList();
+        }
+    }
+
+    private void LimparFiltroProdutos()
+    {
+        ProdutoNomeFiltro = string.Empty;
+        ProdutoQuantidadeFiltro = null;
+        ProdutoTipoFiltro = string.Empty;
+        ProdutoCategoriaFiltro = string.Empty;
+        FilteredProdutos = Produtos;
+    }
+
+    private void FiltrarAlmoxarifados()
+    {
+        if (Almoxarifados != null)
+        {
+            FilteredAlmoxarifados = Almoxarifados.Where(a =>
+                (string.IsNullOrEmpty(EmpresaNomeFiltro) || a.Empresa.Contains(EmpresaNomeFiltro, StringComparison.OrdinalIgnoreCase)) &&
+                (string.IsNullOrEmpty(EmpresaCNPJFiltro) || a.CNPJ.Contains(EmpresaCNPJFiltro, StringComparison.OrdinalIgnoreCase))
+            ).ToList();
+        }
+    }
+
+    private void LimparFiltroAlmoxarifados()
+    {
+        EmpresaNomeFiltro = string.Empty;
+        EmpresaCNPJFiltro = string.Empty;
+        FilteredAlmoxarifados = Almoxarifados;
+    }
+}

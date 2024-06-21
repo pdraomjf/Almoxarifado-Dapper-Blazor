@@ -13,7 +13,7 @@ namespace AlmoxarifadoFront.DTO.Validators
         {
             AddRule(p => p.Empresa).NotEmpty().NotNull().WithMessage("Empresa não pode ser nulo ou vazio");
             AddRule(p => p.Empresa).MinimumLength(1).WithMessage("Empresa deve ter pelo menos 1 caractere");
-            AddRule(p => p.CNPJ).MinimumLength(1).MaximumLength(15).WithMessage("CNPJ deve ter 14 caracteres");
+            AddRule(p => p.CNPJ).MinimumLength(14).MaximumLength(14).WithMessage("CNPJ deve ter 14 caracteres");
         }
     }
 

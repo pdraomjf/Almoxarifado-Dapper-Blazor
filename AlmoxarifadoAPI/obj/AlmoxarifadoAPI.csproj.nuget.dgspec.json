@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Estudo\\C#\\GITGIT\\AlmoxarifadoAPI\\AlmoxarifadoAPI.csproj": {}
+    "D:\\2\\AlmoxarifadoAPI\\AlmoxarifadoAPI.csproj": {}
   },
   "projects": {
-    "D:\\Estudo\\C#\\GITGIT\\AlmoxarifadoAPI\\AlmoxarifadoAPI.csproj": {
+    "D:\\2\\AlmoxarifadoAPI\\AlmoxarifadoAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Estudo\\C#\\GITGIT\\AlmoxarifadoAPI\\AlmoxarifadoAPI.csproj",
+        "projectUniqueName": "D:\\2\\AlmoxarifadoAPI\\AlmoxarifadoAPI.csproj",
         "projectName": "AlmoxarifadoAPI",
-        "projectPath": "D:\\Estudo\\C#\\GITGIT\\AlmoxarifadoAPI\\AlmoxarifadoAPI.csproj",
-        "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
-        "outputPath": "D:\\Estudo\\C#\\GITGIT\\AlmoxarifadoAPI\\obj\\",
+        "projectPath": "D:\\2\\AlmoxarifadoAPI\\AlmoxarifadoAPI.csproj",
+        "packagesPath": "C:\\Users\\vitor\\.nuget\\packages\\",
+        "outputPath": "D:\\2\\AlmoxarifadoAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Administrador\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\vitor\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,11 +28,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Estudo\\C#\\GITGIT\\AlmoxarifadoInfra\\AlmoxarifadoInfra.csproj": {
-                "projectPath": "D:\\Estudo\\C#\\GITGIT\\AlmoxarifadoInfra\\AlmoxarifadoInfra.csproj"
+              "D:\\2\\AlmoxarifadoInfra\\AlmoxarifadoInfra.csproj": {
+                "projectPath": "D:\\2\\AlmoxarifadoInfra\\AlmoxarifadoInfra.csproj"
               },
-              "D:\\Estudo\\C#\\GITGIT\\AlmoxarifadoModel\\AlmoxarifadoModel.csproj": {
-                "projectPath": "D:\\Estudo\\C#\\GITGIT\\AlmoxarifadoModel\\AlmoxarifadoModel.csproj"
+              "D:\\2\\AlmoxarifadoModel\\AlmoxarifadoModel.csproj": {
+                "projectPath": "D:\\2\\AlmoxarifadoModel\\AlmoxarifadoModel.csproj"
               }
             }
           }
@@ -76,21 +76,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Estudo\\C#\\GITGIT\\AlmoxarifadoInfra\\AlmoxarifadoInfra.csproj": {
+    "D:\\2\\AlmoxarifadoInfra\\AlmoxarifadoInfra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Estudo\\C#\\GITGIT\\AlmoxarifadoInfra\\AlmoxarifadoInfra.csproj",
+        "projectUniqueName": "D:\\2\\AlmoxarifadoInfra\\AlmoxarifadoInfra.csproj",
         "projectName": "AlmoxarifadoInfra",
-        "projectPath": "D:\\Estudo\\C#\\GITGIT\\AlmoxarifadoInfra\\AlmoxarifadoInfra.csproj",
-        "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
-        "outputPath": "D:\\Estudo\\C#\\GITGIT\\AlmoxarifadoInfra\\obj\\",
+        "projectPath": "D:\\2\\AlmoxarifadoInfra\\AlmoxarifadoInfra.csproj",
+        "packagesPath": "C:\\Users\\vitor\\.nuget\\packages\\",
+        "outputPath": "D:\\2\\AlmoxarifadoInfra\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Administrador\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\vitor\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -104,8 +104,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Estudo\\C#\\GITGIT\\AlmoxarifadoModel\\AlmoxarifadoModel.csproj": {
-                "projectPath": "D:\\Estudo\\C#\\GITGIT\\AlmoxarifadoModel\\AlmoxarifadoModel.csproj"
+              "D:\\2\\AlmoxarifadoModel\\AlmoxarifadoModel.csproj": {
+                "projectPath": "D:\\2\\AlmoxarifadoModel\\AlmoxarifadoModel.csproj"
               }
             }
           }
@@ -150,21 +150,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Estudo\\C#\\GITGIT\\AlmoxarifadoModel\\AlmoxarifadoModel.csproj": {
+    "D:\\2\\AlmoxarifadoModel\\AlmoxarifadoModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Estudo\\C#\\GITGIT\\AlmoxarifadoModel\\AlmoxarifadoModel.csproj",
+        "projectUniqueName": "D:\\2\\AlmoxarifadoModel\\AlmoxarifadoModel.csproj",
         "projectName": "AlmoxarifadoModel",
-        "projectPath": "D:\\Estudo\\C#\\GITGIT\\AlmoxarifadoModel\\AlmoxarifadoModel.csproj",
-        "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
-        "outputPath": "D:\\Estudo\\C#\\GITGIT\\AlmoxarifadoModel\\obj\\",
+        "projectPath": "D:\\2\\AlmoxarifadoModel\\AlmoxarifadoModel.csproj",
+        "packagesPath": "C:\\Users\\vitor\\.nuget\\packages\\",
+        "outputPath": "D:\\2\\AlmoxarifadoModel\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Administrador\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\vitor\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -210,7 +210,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

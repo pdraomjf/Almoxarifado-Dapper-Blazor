@@ -34,3 +34,15 @@ D:\Estudo\C#\GITGIT\AlmoxarifadoModel\obj\Debug\net8.0\AlmoxarifadoModel.dll
 D:\Estudo\C#\GITGIT\AlmoxarifadoModel\obj\Debug\net8.0\refint\AlmoxarifadoModel.dll
 D:\Estudo\C#\GITGIT\AlmoxarifadoModel\obj\Debug\net8.0\AlmoxarifadoModel.pdb
 D:\Estudo\C#\GITGIT\AlmoxarifadoModel\obj\Debug\net8.0\ref\AlmoxarifadoModel.dll
+D:\2\AlmoxarifadoModel\bin\Debug\net8.0\AlmoxarifadoModel.deps.json
+D:\2\AlmoxarifadoModel\bin\Debug\net8.0\AlmoxarifadoModel.dll
+D:\2\AlmoxarifadoModel\bin\Debug\net8.0\AlmoxarifadoModel.pdb
+D:\2\AlmoxarifadoModel\obj\Debug\net8.0\AlmoxarifadoModel.GeneratedMSBuildEditorConfig.editorconfig
+D:\2\AlmoxarifadoModel\obj\Debug\net8.0\AlmoxarifadoModel.AssemblyInfoInputs.cache
+D:\2\AlmoxarifadoModel\obj\Debug\net8.0\AlmoxarifadoModel.AssemblyInfo.cs
+D:\2\AlmoxarifadoModel\obj\Debug\net8.0\AlmoxarifadoModel.csproj.CoreCompileInputs.cache
+D:\2\AlmoxarifadoModel\obj\Debug\net8.0\AlmoxarifadoModel.sourcelink.json
+D:\2\AlmoxarifadoModel\obj\Debug\net8.0\AlmoxarifadoModel.dll
+D:\2\AlmoxarifadoModel\obj\Debug\net8.0\refint\AlmoxarifadoModel.dll
+D:\2\AlmoxarifadoModel\obj\Debug\net8.0\AlmoxarifadoModel.pdb
+D:\2\AlmoxarifadoModel\obj\Debug\net8.0\ref\AlmoxarifadoModel.dll
