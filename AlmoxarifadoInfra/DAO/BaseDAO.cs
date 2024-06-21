@@ -117,7 +117,7 @@ namespace AlmoxarifadoInfra.DAO
         }
 
         private static string GetStringConexao() =>
-            "Data Source=../BD/banco_de_dados.db";
+            "Data Source=../DB/database.db";
     }
 
     public class Mapa

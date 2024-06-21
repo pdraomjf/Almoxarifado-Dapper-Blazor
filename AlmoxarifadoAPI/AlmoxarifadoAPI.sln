@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34714.143
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlmoxarifadoAPI", "AlmoxarifadoAPI.csproj", "{3AAB1509-8A3C-4EFE-8DA7-4BE198096440}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlmoxarifadoAPI", "AlmoxarifadoAPI.csproj", "{3AAB1509-8A3C-4EFE-8DA7-4BE198096440}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlmoxarifadoModel", "..\AlmoxarifadoModel\AlmoxarifadoModel.csproj", "{9534B874-E1D6-4FE2-9173-8615A1819361}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlmoxarifadoModel", "..\AlmoxarifadoModel\AlmoxarifadoModel.csproj", "{9534B874-E1D6-4FE2-9173-8615A1819361}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlmoxarifadoInfra", "..\AlmoxarifadoInfra\AlmoxarifadoInfra.csproj", "{4CB62C67-1DEA-43B7-9ADB-AD54C42E621B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlmoxarifadoInfra", "..\AlmoxarifadoInfra\AlmoxarifadoInfra.csproj", "{4CB62C67-1DEA-43B7-9ADB-AD54C42E621B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlmoxarifadoFront", "..\AlmoxarifadoFront\AlmoxarifadoFront.csproj", "{41163345-344B-4EBA-8953-3DE856AF9C7E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlmoxarifadoFront", "..\AlmoxarifadoFront\AlmoxarifadoFront.csproj", "{41163345-344B-4EBA-8953-3DE856AF9C7E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

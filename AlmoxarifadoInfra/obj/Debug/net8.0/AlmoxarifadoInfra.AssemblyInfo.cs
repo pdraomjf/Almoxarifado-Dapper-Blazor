@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AlmoxarifadoInfra")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6fa19a00064b2248062962a9b1e8be608d74e869")]
 [assembly: System.Reflection.AssemblyProductAttribute("AlmoxarifadoInfra")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AlmoxarifadoInfra")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,0 +1,156 @@
+﻿@* @page "/produto/{Acao}/{Id?}"
+@using System.Net.Http
+@using System.Text.Json
+@using AlmoxarifadoFront.Helpers
+@using AlmoxarifadoFront.DTO
+@using AlmoxarifadoFront.Components
+@inject NavigationManager NavManager
+ *@
+@* @if (Objeto == null)
+{ *@
+   @*  <p><strong>Carregando...</strong></p> *@
+@* }
+else
+{ *@
+    @* <h1>Produto (@Acao)</h1> *@
+  @*   @if (@mensagem != null)
+    { *@
+        @* <EditForm Model="Objeto" OnSubmit="Salvar" FormName="ProdutoForm"> *@
+            @* <MyInput Title="Nome" @bind-Value="Objeto.Nome" Validate="@Objeto.Validar" Errors="@Objeto.GetErrors(x => x.Nome)" Disabled="@Desabilitar" /> *@
+            @* <MyInputInt Title="Quantidade" @bind-Value="Objeto.Quantidade" Validate="@Objeto.Validar" Errors="@Objeto.GetErrors(x => x.Quantidade)" Disabled="@Desabilitar" /> *@
+        @* </EditForm> *@
+       @*  <div class="alert alert-primary" role="alert">
+            @mensagem
+        </div> *@
+@*     }
+} *@
+@* 
+@code {
+    [Parameter]
+    public string? Acao { get; set; }
+
+    [Parameter]
+    public string? Id { get; set; }
+
+    private bool Desabilitar =>
+        ComparaAcao(Acoes.Consultar, Acoes.Excluir);
+
+    private string? mensagem = null;
+
+    private ProdutoDTO? Objeto { get; set; }
+
+    private void Voltar()
+    {
+        NavManager.NavigateTo("/produto");
+    }
+
+    private async Task ApresentarMensagem(string mensagem, int duracao = 2)
+    {
+        this.mensagem = mensagem;
+        var apresentarAte = DateTime.Now.AddSeconds(duracao);
+
+        StateHasChanged();
+
+        while (DateTime.Now < apresentarAte)
+            await Task.Delay(1000);
+
+        NavManager.NavigateTo("/produto");
+    }
+
+    private bool ComparaAcao(params string[] acoes)
+    {
+        foreach (var acaoAtual in acoes)
+            if (Acao.Equals(acaoAtual, StringComparison.OrdinalIgnoreCase))
+                return true;
+
+        return false;
+    }
+
+    private async Task Inserir()
+    {
+        var httpClient = new HttpClient();
+
+        using StringContent jsonContent = new(
+            JsonSerializer.Serialize(Objeto),
+            System.Text.Encoding.UTF8,
+            "application/json"
+        );
+
+        using HttpResponseMessage response = await httpClient.PostAsync(
+                $"http://localhost:5152/api/produto",
+                jsonContent
+            );
+
+        response.EnsureSuccessStatusCode();
+
+        await ApresentarMensagem("Produto inserido com sucesso!");
+    }
+
+    private async Task Alterar()
+    {
+        var httpClient = new HttpClient();
+
+        using StringContent jsonContent = new(
+            JsonSerializer.Serialize(Objeto),
+            System.Text.Encoding.UTF8,
+            "application/json"
+        );
+
+        using HttpResponseMessage response = await httpClient.PutAsync(
+                $"http://localhost:5152/api/produto/{Id}",
+                jsonContent
+            );
+
+        response.EnsureSuccessStatusCode();
+
+        await ApresentarMensagem($"Produto alterado com sucesso!");
+    }
+
+    private async Task Excluir()
+    {
+        var httpClient = new HttpClient();
+
+        using HttpResponseMessage response = await httpClient.DeleteAsync(
+            $"http://localhost:5152/api/produto/{Id}"
+        );
+
+        response.EnsureSuccessStatusCode();
+
+        await ApresentarMensagem("Produto excluído com sucesso!");
+    }
+
+    private async Task Salvar()
+    {
+        if (Objeto.Validar())
+        {
+            if (ComparaAcao(Acoes.Alterar))
+                await Alterar();
+            else if (ComparaAcao(Acoes.Inserir))
+                await Inserir();
+            else if (ComparaAcao(Acoes.Excluir))
+                await Excluir();
+        }
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (Acao.Equals(Acoes.Inserir, StringComparison.OrdinalIgnoreCase))
+        {
+            Objeto = new ProdutoDTO();
+            return;
+        }
+
+        var client = new HttpClient();
+
+        using HttpResponseMessage response = await client.GetAsync($"http://localhost:5152/api/produto/{Id}");
+        response.EnsureSuccessStatusCode();
+        string responseBody = await response.Content.ReadAsStringAsync();
+
+        var options = new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive = true
+            };
+
+        Objeto = JsonSerializer.Deserialize<ProdutoDTO>(responseBody, options);
+    }
+} *@

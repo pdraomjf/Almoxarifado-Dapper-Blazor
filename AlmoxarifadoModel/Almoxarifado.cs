@@ -12,7 +12,5 @@ namespace AlmoxarifadoModel
         public string Empresa { get; set; } = "";
         public string CNPJ { get; set; } = "";
 
-
-
     }
 }

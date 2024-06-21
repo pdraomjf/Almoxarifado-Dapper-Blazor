@@ -1,0 +1,171 @@
+﻿@page "/almoxarifado/{Acao}/{Id?}"
+@using System.Net.Http
+@using System.Text.Json
+@using AlmoxarifadoFront.Helpers
+@using AlmoxarifadoFront.DTO
+@using AlmoxarifadoFront.Components
+@inject NavigationManager NavManager
+
+@if (Objeto == null)
+{
+    <p><strong>Carregando...</strong></p>
+}
+else
+{
+    <h1>Almoxarifado (@Acao)</h1>
+    <EditForm Model="Objeto" OnSubmit="Salvar" FormName="AlmoxarifadoForm">
+        <MyInput Title="Empresa" @bind-Value="Objeto.Empresa" Validate="@Objeto.Validar" Errors="@Objeto.GetErrors(x => x.Empresa)" Disabled="@Desabilitar" />
+        <MyInput Title="CNPJ" @bind-Value="Objeto.CNPJ" Validate="@Objeto.Validar" Errors="@Objeto.GetErrors(x => x.CNPJ)" Disabled="@Desabilitar" />
+        <div>
+            @if (ComparaAcao(Acoes.Alterar))
+            {        
+                <button class="btn btn-warning" type="submit">Alterar</button>
+            }
+            else if (ComparaAcao(Acoes.Inserir))
+            {        
+                <button class="btn btn-primary" type="submit">Inserir</button>
+            }
+            else if (ComparaAcao(Acoes.Excluir))
+            {        
+                <button class="btn btn-danger" type="submit">Excluir</button>
+            }
+            <button class="btn btn-secondary" type="button" @onclick="Voltar">Voltar</button>
+        </div>
+    </EditForm>
+    @if (@mensagem != null)
+    {
+        <div class="alert alert-primary" role="alert">
+            @mensagem
+        </div>
+    }
+}
+
+@code {
+    [Parameter]
+    public string? Acao { get; set; }
+
+    [Parameter]
+    public string? Id { get; set; }
+
+    private bool Desabilitar => 
+        ComparaAcao(Acoes.Consultar, Acoes.Excluir);
+
+    private string? mensagem = null;
+
+    private AlmoxarifadoDTO? Objeto { get; set; }
+
+    private void Voltar()
+    {
+        NavManager.NavigateTo("/almoxarifado");
+    }
+
+    private async Task ApresentarMensagem(string mensagem, int duracao = 2)
+    {
+        this.mensagem = mensagem;
+        var apresentarAte = DateTime.Now.AddSeconds(duracao);
+
+        StateHasChanged();
+
+        while (DateTime.Now < apresentarAte)
+            await Task.Delay(1000);
+
+        NavManager.NavigateTo("/almoxarifado");
+    }
+
+    private bool ComparaAcao(params string[] acoes)
+    {
+        foreach (var acaoAtual in acoes)
+            if (Acao.Equals(acaoAtual, StringComparison.OrdinalIgnoreCase))
+                return true;
+        
+        return false;
+    }
+
+    private async Task Inserir()
+    {
+        var httpClient = new HttpClient();
+       
+        using StringContent jsonContent = new(
+            JsonSerializer.Serialize(Objeto),
+            System.Text.Encoding.UTF8,
+            "application/json"
+        );
+
+        using HttpResponseMessage response = await httpClient.PostAsync(
+                $"http://localhost:5152/api/almoxarifado",
+                jsonContent
+            );
+
+        response.EnsureSuccessStatusCode();
+
+        await ApresentarMensagem("Almoxarifado inserido com sucesso!");
+    }
+
+    private async Task Alterar()
+    {
+        var httpClient = new HttpClient();
+       
+        using StringContent jsonContent = new(
+            JsonSerializer.Serialize(Objeto),
+            System.Text.Encoding.UTF8,
+            "application/json"
+        );
+
+        using HttpResponseMessage response = await httpClient.PutAsync(
+                $"http://localhost:5152/api/almoxarifado/{Id}",
+                jsonContent
+            );
+
+        response.EnsureSuccessStatusCode();
+
+        await ApresentarMensagem($"Almoxarifado alterado com sucesso!");
+    }
+
+    private async Task Excluir()
+    {
+        var httpClient = new HttpClient();
+       
+        using HttpResponseMessage response = await httpClient.DeleteAsync(
+            $"http://localhost:5152/api/almoxarifado/{Id}"
+        );
+
+        response.EnsureSuccessStatusCode();
+
+        await ApresentarMensagem("Almoxarifado excluído com sucesso!");
+    }
+
+    private async Task Salvar()
+    {
+        if (Objeto.Validar())
+        {
+            if (ComparaAcao(Acoes.Alterar))
+                await Alterar();
+            else if (ComparaAcao(Acoes.Inserir))
+                await Inserir();
+            else if (ComparaAcao(Acoes.Excluir))
+                await Excluir();
+        }
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (Acao.Equals(Acoes.Inserir, StringComparison.OrdinalIgnoreCase))
+        {
+            Objeto = new AlmoxarifadoDTO();
+            return;
+        }
+
+        var client = new HttpClient();
+       
+        using HttpResponseMessage response = await client.GetAsync($"http://localhost:5152/api/almoxarifado/{Id}");
+        response.EnsureSuccessStatusCode();
+        string responseBody = await response.Content.ReadAsStringAsync();
+
+        var options = new JsonSerializerOptions
+        {
+            PropertyNameCaseInsensitive = true
+        };
+
+        Objeto = JsonSerializer.Deserialize<AlmoxarifadoDTO>(responseBody, options);
+    }
+}
