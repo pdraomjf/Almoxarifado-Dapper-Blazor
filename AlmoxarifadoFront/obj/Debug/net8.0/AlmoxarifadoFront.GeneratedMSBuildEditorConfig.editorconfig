@@ -13,59 +13,59 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = AlmoxarifadoFront
 build_property.RootNamespace = AlmoxarifadoFront
-build_property.ProjectDir = D:\Estudo\C#\TrabalhoFinal\AlmoxarifadoFront\
+build_property.ProjectDir = D:\Estudo\C#\GitHub\AlmoxarifadoFront\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = false
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Estudo\C#\TrabalhoFinal\AlmoxarifadoFront
+build_property.MSBuildProjectDirectory = D:\Estudo\C#\GitHub\AlmoxarifadoFront
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Estudo/C\#/TrabalhoFinal/AlmoxarifadoFront/App.razor]
+[D:/Estudo/C\#/GitHub/AlmoxarifadoFront/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Estudo/C\#/TrabalhoFinal/AlmoxarifadoFront/Components/MyInput.razor]
+[D:/Estudo/C\#/GitHub/AlmoxarifadoFront/Components/MyInput.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xNeUlucHV0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Estudo/C\#/TrabalhoFinal/AlmoxarifadoFront/Components/MyInputDouble.razor]
+[D:/Estudo/C\#/GitHub/AlmoxarifadoFront/Components/MyInputDouble.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xNeUlucHV0RG91YmxlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Estudo/C\#/TrabalhoFinal/AlmoxarifadoFront/Components/MyInputInt.razor]
+[D:/Estudo/C\#/GitHub/AlmoxarifadoFront/Components/MyInputInt.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xNeUlucHV0SW50LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Estudo/C\#/TrabalhoFinal/AlmoxarifadoFront/Pages/AlmoxarifadoLista.razor]
+[D:/Estudo/C\#/GitHub/AlmoxarifadoFront/Pages/AlmoxarifadoLista.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWxtb3hhcmlmYWRvTGlzdGEucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Estudo/C\#/TrabalhoFinal/AlmoxarifadoFront/Pages/AlmoxarifadoManutencao.razor]
+[D:/Estudo/C\#/GitHub/AlmoxarifadoFront/Pages/AlmoxarifadoManutencao.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWxtb3hhcmlmYWRvTWFudXRlbmNhby5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Estudo/C\#/TrabalhoFinal/AlmoxarifadoFront/Pages/Home.razor]
+[D:/Estudo/C\#/GitHub/AlmoxarifadoFront/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Estudo/C\#/TrabalhoFinal/AlmoxarifadoFront/Pages/ProdutoLista.razor]
+[D:/Estudo/C\#/GitHub/AlmoxarifadoFront/Pages/ProdutoLista.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHV0b0xpc3RhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Estudo/C\#/TrabalhoFinal/AlmoxarifadoFront/Pages/ProdutoManutencao.razor]
+[D:/Estudo/C\#/GitHub/AlmoxarifadoFront/Pages/ProdutoManutencao.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHV0b01hbnV0ZW5jYW8ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Estudo/C\#/TrabalhoFinal/AlmoxarifadoFront/_Imports.razor]
+[D:/Estudo/C\#/GitHub/AlmoxarifadoFront/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Estudo/C\#/TrabalhoFinal/AlmoxarifadoFront/Layout/MainLayout.razor]
+[D:/Estudo/C\#/GitHub/AlmoxarifadoFront/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-0huxpnu11t
 
-[D:/Estudo/C\#/TrabalhoFinal/AlmoxarifadoFront/Layout/NavMenu.razor]
+[D:/Estudo/C\#/GitHub/AlmoxarifadoFront/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-wxw6tvsx4b

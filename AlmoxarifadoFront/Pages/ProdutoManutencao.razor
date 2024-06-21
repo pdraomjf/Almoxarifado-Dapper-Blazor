@@ -1,30 +1,47 @@
-﻿@* @page "/produto/{Acao}/{Id?}"
+﻿@page "/produto/{Acao}/{Id?}"
 @using System.Net.Http
 @using System.Text.Json
 @using AlmoxarifadoFront.Helpers
 @using AlmoxarifadoFront.DTO
 @using AlmoxarifadoFront.Components
 @inject NavigationManager NavManager
- *@
-@* @if (Objeto == null)
-{ *@
-   @*  <p><strong>Carregando...</strong></p> *@
-@* }
+
+@if (Objeto == null)
+{
+    <p><strong>Carregando...</strong></p>
+}
 else
-{ *@
-    @* <h1>Produto (@Acao)</h1> *@
-  @*   @if (@mensagem != null)
-    { *@
-        @* <EditForm Model="Objeto" OnSubmit="Salvar" FormName="ProdutoForm"> *@
-            @* <MyInput Title="Nome" @bind-Value="Objeto.Nome" Validate="@Objeto.Validar" Errors="@Objeto.GetErrors(x => x.Nome)" Disabled="@Desabilitar" /> *@
-            @* <MyInputInt Title="Quantidade" @bind-Value="Objeto.Quantidade" Validate="@Objeto.Validar" Errors="@Objeto.GetErrors(x => x.Quantidade)" Disabled="@Desabilitar" /> *@
-        @* </EditForm> *@
-       @*  <div class="alert alert-primary" role="alert">
+{
+    <h1>Produto (@Acao)</h1>
+    <EditForm Model="Objeto" OnSubmit="Salvar" FormName="ProdutoForm">
+        <MyInput Title="Nome" @bind-Value="Objeto.Nome" Validate="Objeto.Validar" Errors="Objeto.GetErrors(x => x.Nome)" Disabled="Desabilitar" />
+        <MyInputInt Title="Quantidade" @bind-Value="Objeto.Quantidade" Validate="Objeto.Validar" Errors="Objeto.GetErrors(x => x.Quantidade)" Disabled="Desabilitar" />
+        <MyInput Title="Tipo" @bind-Value="Objeto.Tipo" Validate="Objeto.Validar" Errors="Objeto.GetErrors(x => x.Tipo)" Disabled="Desabilitar" />
+        <MyInput Title="Categoria" @bind-Value="Objeto.Categoria" Validate="Objeto.Validar" Errors="Objeto.GetErrors(x => x.Categoria)" Disabled="Desabilitar" />
+        <div>
+            @if (ComparaAcao(Acoes.Alterar))
+            {
+                <button class="btn btn-warning" type="submit">Alterar</button>
+            }
+            else if (ComparaAcao(Acoes.Inserir))
+            {
+                <button class="btn btn-primary" type="submit">Inserir</button>
+            }
+            else if (ComparaAcao(Acoes.Excluir))
+            {
+                <button class="btn btn-danger" type="submit">Excluir</button>
+            }
+            <button class="btn btn-secondary" type="button" @onclick="Voltar">Voltar</button>
+        </div>
+    </EditForm>
+    @if (mensagem != null)
+    {
+        <div class="alert alert-primary" role="alert">
             @mensagem
-        </div> *@
-@*     }
-} *@
-@* 
+        </div>
+    }
+}
+
 @code {
     [Parameter]
     public string? Acao { get; set; }
@@ -32,8 +49,7 @@ else
     [Parameter]
     public string? Id { get; set; }
 
-    private bool Desabilitar =>
-        ComparaAcao(Acoes.Consultar, Acoes.Excluir);
+    private bool Desabilitar => ComparaAcao(Acoes.Consultar, Acoes.Excluir);
 
     private string? mensagem = null;
 
@@ -52,18 +68,16 @@ else
         StateHasChanged();
 
         while (DateTime.Now < apresentarAte)
+        {
             await Task.Delay(1000);
+        }
 
         NavManager.NavigateTo("/produto");
     }
 
     private bool ComparaAcao(params string[] acoes)
     {
-        foreach (var acaoAtual in acoes)
-            if (Acao.Equals(acaoAtual, StringComparison.OrdinalIgnoreCase))
-                return true;
-
-        return false;
+        return acoes.Any(acaoAtual => Acao.Equals(acaoAtual, StringComparison.OrdinalIgnoreCase));
     }
 
     private async Task Inserir()
@@ -77,9 +91,9 @@ else
         );
 
         using HttpResponseMessage response = await httpClient.PostAsync(
-                $"http://localhost:5152/api/produto",
-                jsonContent
-            );
+            $"http://localhost:5152/api/produto",
+            jsonContent
+        );
 
         response.EnsureSuccessStatusCode();
 
@@ -97,13 +111,13 @@ else
         );
 
         using HttpResponseMessage response = await httpClient.PutAsync(
-                $"http://localhost:5152/api/produto/{Id}",
-                jsonContent
-            );
+            $"http://localhost:5152/api/produto/{Id}",
+            jsonContent
+        );
 
         response.EnsureSuccessStatusCode();
 
-        await ApresentarMensagem($"Produto alterado com sucesso!");
+        await ApresentarMensagem("Produto alterado com sucesso!");
     }
 
     private async Task Excluir()
@@ -153,4 +167,4 @@ else
 
         Objeto = JsonSerializer.Deserialize<ProdutoDTO>(responseBody, options);
     }
-} *@
+}

@@ -1,10 +1,10 @@
-﻿@* @using System.Globalization
+﻿@using System.Globalization
 
 @inherits MyInputIntComponent
 
 <div>
     <label>@Title</label>
-    <input type="number" value="@Value" disabled="@Disabled" @onchange="OnChangeAsync" class=@("form-control" + (Errors == null || Errors.Count() == 0 ? "" : " is-invalid")) />
+    <input type="number" value="@Value?.ToString(CultureInfo.InvariantCulture)" step="1" disabled="@Disabled" @onchange="OnChangeAsync" class=@("form-control" + (Errors == null || Errors.Count() == 0 ? "" : " is-invalid")) />
 
     @if (Errors != null && Errors.Count() > 0)
     {
@@ -17,4 +17,4 @@
             </ul>
         </div>
     }
-</div> *@
+</div>

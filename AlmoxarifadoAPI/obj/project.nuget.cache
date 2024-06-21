@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jq/i5mDX1waDWF5F+NboAryZmXHinC4JhT49gVf1VC9hmww3oQtdK3MnOfJp0+apOeVWQNI+r0piodgHuMORxA==",
+  "dgSpecHash": "oGPwj5tUkhK9T4grPEwZcNwg/N3xDJlpJbwy/R2jlvLoRLoB+U4krRNvqGPNhJ5T+73M4tYuaoAAkNDSXHOQxg==",
   "success": true,
-  "projectFilePath": "D:\\Estudo\\C#\\TrabalhoFinal\\AlmoxarifadoAPI\\AlmoxarifadoAPI.csproj",
+  "projectFilePath": "D:\\Estudo\\C#\\GitHub\\AlmoxarifadoAPI\\AlmoxarifadoAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrador\\.nuget\\packages\\dapper\\2.1.35\\dapper.2.1.35.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.data.sqlite\\8.0.6\\microsoft.data.sqlite.8.0.6.nupkg.sha512",

@@ -30,7 +30,6 @@ namespace AlmoxarifadoFront.DTO.Validators
 
     public interface IValidator<T>
     {
-        //void AddRule<TProperty>(Expression<Func<T, TProperty>> expression);
         IRuleBuilderInitial<T, TProperty> RuleFor<TProperty>(Expression<Func<T, TProperty>> expression);
         bool Validate(T obj, out IEnumerable<ValidationError> errors);
     }

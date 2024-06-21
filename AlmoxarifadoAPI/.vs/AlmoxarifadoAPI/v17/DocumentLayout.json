@@ -1,57 +1,42 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\TrabalhoWebC#\\AlmoxarifadoAPI\\",
+  "WorkspaceRootPath": "D:\\Estudo\\C#\\GitHub\\AlmoxarifadoAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{41163345-344B-4EBA-8953-3DE856AF9C7E}|..\\AlmoxarifadoFront\\AlmoxarifadoFront.csproj|d:\\trabalhowebc#\\almoxarifadofront\\dto\\validators\\produtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{41163345-344B-4EBA-8953-3DE856AF9C7E}|..\\AlmoxarifadoFront\\AlmoxarifadoFront.csproj|d:\\estudo\\c#\\github\\almoxarifadofront\\pages\\produtomanutencao.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{41163345-344B-4EBA-8953-3DE856AF9C7E}|..\\AlmoxarifadoFront\\AlmoxarifadoFront.csproj|d:\\trabalhowebc#\\almoxarifadofront\\dto\\validators\\almoxarifadovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{41163345-344B-4EBA-8953-3DE856AF9C7E}|..\\AlmoxarifadoFront\\AlmoxarifadoFront.csproj|d:\\estudo\\c#\\github\\almoxarifadofront\\dto\\produtodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9534B874-E1D6-4FE2-9173-8615A1819361}|..\\AlmoxarifadoModel\\AlmoxarifadoModel.csproj|d:\\trabalhowebc#\\almoxarifadomodel\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{41163345-344B-4EBA-8953-3DE856AF9C7E}|..\\AlmoxarifadoFront\\AlmoxarifadoFront.csproj|d:\\estudo\\c#\\github\\almoxarifadofront\\pages\\produtolista.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{41163345-344B-4EBA-8953-3DE856AF9C7E}|..\\AlmoxarifadoFront\\AlmoxarifadoFront.csproj|d:\\trabalhowebc#\\almoxarifadofront\\components\\myinput.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{41163345-344B-4EBA-8953-3DE856AF9C7E}|..\\AlmoxarifadoFront\\AlmoxarifadoFront.csproj|d:\\estudo\\c#\\github\\almoxarifadofront\\components\\myinputint.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{41163345-344B-4EBA-8953-3DE856AF9C7E}|..\\AlmoxarifadoFront\\AlmoxarifadoFront.csproj|d:\\trabalhowebc#\\almoxarifadofront\\components\\myinput.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{41163345-344B-4EBA-8953-3DE856AF9C7E}|..\\AlmoxarifadoFront\\AlmoxarifadoFront.csproj|d:\\estudo\\c#\\github\\almoxarifadofront\\dto\\validators\\validator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{41163345-344B-4EBA-8953-3DE856AF9C7E}|..\\AlmoxarifadoFront\\AlmoxarifadoFront.csproj|d:\\trabalhowebc#\\almoxarifadofront\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{41163345-344B-4EBA-8953-3DE856AF9C7E}|..\\AlmoxarifadoFront\\AlmoxarifadoFront.csproj|d:\\estudo\\c#\\github\\almoxarifadofront\\dto\\modelodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3AAB1509-8A3C-4EFE-8DA7-4BE198096440}|AlmoxarifadoAPI.csproj|d:\\trabalhowebc#\\almoxarifadoapi\\almoxarifadoapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{3AAB1509-8A3C-4EFE-8DA7-4BE198096440}|AlmoxarifadoAPI.csproj|solutionrelative:almoxarifadoapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+      "AbsoluteMoniker": "D:0:0:{41163345-344B-4EBA-8953-3DE856AF9C7E}|..\\AlmoxarifadoFront\\AlmoxarifadoFront.csproj|d:\\estudo\\c#\\github\\almoxarifadofront\\dto\\validators\\genericvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3AAB1509-8A3C-4EFE-8DA7-4BE198096440}|AlmoxarifadoAPI.csproj|d:\\trabalhowebc#\\almoxarifadoapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{3AAB1509-8A3C-4EFE-8DA7-4BE198096440}|AlmoxarifadoAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{41163345-344B-4EBA-8953-3DE856AF9C7E}|..\\AlmoxarifadoFront\\AlmoxarifadoFront.csproj|d:\\estudo\\c#\\github\\almoxarifadofront\\pages\\almoxarifadomanutencao.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3AAB1509-8A3C-4EFE-8DA7-4BE198096440}|AlmoxarifadoAPI.csproj|d:\\trabalhowebc#\\almoxarifadoapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3AAB1509-8A3C-4EFE-8DA7-4BE198096440}|AlmoxarifadoAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{41163345-344B-4EBA-8953-3DE856AF9C7E}|..\\AlmoxarifadoFront\\AlmoxarifadoFront.csproj|d:\\estudo\\c#\\github\\almoxarifadofront\\helpers\\acoes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3AAB1509-8A3C-4EFE-8DA7-4BE198096440}|AlmoxarifadoAPI.csproj|d:\\trabalhowebc#\\almoxarifadoapi\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3AAB1509-8A3C-4EFE-8DA7-4BE198096440}|AlmoxarifadoAPI.csproj|solutionrelative:controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{41163345-344B-4EBA-8953-3DE856AF9C7E}|..\\AlmoxarifadoFront\\AlmoxarifadoFront.csproj|d:\\estudo\\c#\\github\\almoxarifadofront\\pages\\almoxarifadolista.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3AAB1509-8A3C-4EFE-8DA7-4BE198096440}|AlmoxarifadoAPI.csproj|d:\\trabalhowebc#\\almoxarifadoapi\\controllers\\almoxarifadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3AAB1509-8A3C-4EFE-8DA7-4BE198096440}|AlmoxarifadoAPI.csproj|solutionrelative:controllers\\almoxarifadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{41163345-344B-4EBA-8953-3DE856AF9C7E}|..\\AlmoxarifadoFront\\AlmoxarifadoFront.csproj|d:\\estudo\\c#\\github\\almoxarifadofront\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4CB62C67-1DEA-43B7-9ADB-AD54C42E621B}|..\\AlmoxarifadoInfra\\AlmoxarifadoInfra.csproj|d:\\trabalhowebc#\\almoxarifadoinfra\\dao\\basedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4CB62C67-1DEA-43B7-9ADB-AD54C42E621B}|..\\AlmoxarifadoInfra\\AlmoxarifadoInfra.csproj|d:\\trabalhowebc#\\almoxarifadoinfra\\dao\\produtodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4CB62C67-1DEA-43B7-9ADB-AD54C42E621B}|..\\AlmoxarifadoInfra\\AlmoxarifadoInfra.csproj|d:\\trabalhowebc#\\almoxarifadoinfra\\dao\\almoxarifadodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3AAB1509-8A3C-4EFE-8DA7-4BE198096440}|AlmoxarifadoAPI.csproj|d:\\trabalhowebc#\\almoxarifadoapi\\almoxarifadoapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{3AAB1509-8A3C-4EFE-8DA7-4BE198096440}|AlmoxarifadoAPI.csproj|solutionrelative:almoxarifadoapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{41163345-344B-4EBA-8953-3DE856AF9C7E}|..\\AlmoxarifadoFront\\AlmoxarifadoFront.csproj|d:\\estudo\\c#\\github\\almoxarifadofront\\components\\myinputint.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -61,188 +46,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ProdutoValidator.cs",
-              "DocumentMoniker": "D:\\TrabalhoWebC#\\AlmoxarifadoFront\\DTO\\Validators\\ProdutoValidator.cs",
-              "RelativeDocumentMoniker": "..\\AlmoxarifadoFront\\DTO\\Validators\\ProdutoValidator.cs",
-              "ToolTip": "D:\\TrabalhoWebC#\\AlmoxarifadoFront\\DTO\\Validators\\ProdutoValidator.cs",
-              "RelativeToolTip": "..\\AlmoxarifadoFront\\DTO\\Validators\\ProdutoValidator.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-21T03:49:41.345Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AlmoxarifadoValidator.cs",
-              "DocumentMoniker": "D:\\TrabalhoWebC#\\AlmoxarifadoFront\\DTO\\Validators\\AlmoxarifadoValidator.cs",
-              "RelativeDocumentMoniker": "..\\AlmoxarifadoFront\\DTO\\Validators\\AlmoxarifadoValidator.cs",
-              "ToolTip": "D:\\TrabalhoWebC#\\AlmoxarifadoFront\\DTO\\Validators\\AlmoxarifadoValidator.cs",
-              "RelativeToolTip": "..\\AlmoxarifadoFront\\DTO\\Validators\\AlmoxarifadoValidator.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-21T03:44:41.382Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MyInput.razor.cs",
-              "DocumentMoniker": "D:\\TrabalhoWebC#\\AlmoxarifadoFront\\Components\\MyInput.razor.cs",
-              "RelativeDocumentMoniker": "..\\AlmoxarifadoFront\\Components\\MyInput.razor.cs",
-              "ToolTip": "D:\\TrabalhoWebC#\\AlmoxarifadoFront\\Components\\MyInput.razor.cs",
-              "RelativeToolTip": "..\\AlmoxarifadoFront\\Components\\MyInput.razor.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-21T03:35:36.396Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MyInput.razor",
-              "DocumentMoniker": "D:\\TrabalhoWebC#\\AlmoxarifadoFront\\Components\\MyInput.razor",
-              "RelativeDocumentMoniker": "..\\AlmoxarifadoFront\\Components\\MyInput.razor",
-              "ToolTip": "D:\\TrabalhoWebC#\\AlmoxarifadoFront\\Components\\MyInput.razor",
-              "RelativeToolTip": "..\\AlmoxarifadoFront\\Components\\MyInput.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-21T03:34:52.924Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\TrabalhoWebC#\\AlmoxarifadoFront\\Program.cs",
-              "RelativeDocumentMoniker": "..\\AlmoxarifadoFront\\Program.cs",
-              "ToolTip": "D:\\TrabalhoWebC#\\AlmoxarifadoFront\\Program.cs",
-              "RelativeToolTip": "..\\AlmoxarifadoFront\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-21T03:23:42.038Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AlmoxarifadoAPI.http",
-              "DocumentMoniker": "D:\\TrabalhoWebC#\\AlmoxarifadoAPI\\AlmoxarifadoAPI.http",
-              "RelativeDocumentMoniker": "AlmoxarifadoAPI.http",
-              "ToolTip": "D:\\TrabalhoWebC#\\AlmoxarifadoAPI\\AlmoxarifadoAPI.http",
-              "RelativeToolTip": "AlmoxarifadoAPI.http",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2024-06-21T03:22:06.102Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\TrabalhoWebC#\\AlmoxarifadoAPI\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "D:\\TrabalhoWebC#\\AlmoxarifadoAPI\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-06-21T03:21:31.018Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\TrabalhoWebC#\\AlmoxarifadoAPI\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\TrabalhoWebC#\\AlmoxarifadoAPI\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAAAAAAA",
+              "Title": "Acoes.cs",
+              "DocumentMoniker": "D:\\Estudo\\C#\\GitHub\\AlmoxarifadoFront\\Helpers\\Acoes.cs",
+              "RelativeDocumentMoniker": "..\\AlmoxarifadoFront\\Helpers\\Acoes.cs",
+              "ToolTip": "D:\\Estudo\\C#\\GitHub\\AlmoxarifadoFront\\Helpers\\Acoes.cs",
+              "RelativeToolTip": "..\\AlmoxarifadoFront\\Helpers\\Acoes.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-21T03:18:22.26Z",
+              "WhenOpened": "2024-06-21T19:17:45.441Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Produto.cs",
-              "DocumentMoniker": "D:\\TrabalhoWebC#\\AlmoxarifadoModel\\Produto.cs",
-              "RelativeDocumentMoniker": "..\\AlmoxarifadoModel\\Produto.cs",
-              "ToolTip": "D:\\TrabalhoWebC#\\AlmoxarifadoModel\\Produto.cs",
-              "RelativeToolTip": "..\\AlmoxarifadoModel\\Produto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-21T03:17:25.439Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ProdutoController.cs",
-              "DocumentMoniker": "D:\\TrabalhoWebC#\\AlmoxarifadoAPI\\Controllers\\ProdutoController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ProdutoController.cs",
-              "ToolTip": "D:\\TrabalhoWebC#\\AlmoxarifadoAPI\\Controllers\\ProdutoController.cs",
-              "RelativeToolTip": "Controllers\\ProdutoController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEQAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-21T03:15:59.136Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "BaseDAO.cs",
-              "DocumentMoniker": "D:\\TrabalhoWebC#\\AlmoxarifadoInfra\\DAO\\BaseDAO.cs",
-              "RelativeDocumentMoniker": "..\\AlmoxarifadoInfra\\DAO\\BaseDAO.cs",
-              "ToolTip": "D:\\TrabalhoWebC#\\AlmoxarifadoInfra\\DAO\\BaseDAO.cs",
-              "RelativeToolTip": "..\\AlmoxarifadoInfra\\DAO\\BaseDAO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-21T03:12:08.952Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ProdutoDAO.cs",
-              "DocumentMoniker": "D:\\TrabalhoWebC#\\AlmoxarifadoInfra\\DAO\\ProdutoDAO.cs",
-              "RelativeDocumentMoniker": "..\\AlmoxarifadoInfra\\DAO\\ProdutoDAO.cs",
-              "ToolTip": "D:\\TrabalhoWebC#\\AlmoxarifadoInfra\\DAO\\ProdutoDAO.cs",
-              "RelativeToolTip": "..\\AlmoxarifadoInfra\\DAO\\ProdutoDAO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-21T03:12:01.492Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "AlmoxarifadoDAO.cs",
-              "DocumentMoniker": "D:\\TrabalhoWebC#\\AlmoxarifadoInfra\\DAO\\AlmoxarifadoDAO.cs",
-              "RelativeDocumentMoniker": "..\\AlmoxarifadoInfra\\DAO\\AlmoxarifadoDAO.cs",
-              "ToolTip": "D:\\TrabalhoWebC#\\AlmoxarifadoInfra\\DAO\\AlmoxarifadoDAO.cs",
-              "RelativeToolTip": "..\\AlmoxarifadoInfra\\DAO\\AlmoxarifadoDAO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-21T03:11:27.566Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "AlmoxarifadoAPI",
-              "DocumentMoniker": "D:\\TrabalhoWebC#\\AlmoxarifadoAPI\\AlmoxarifadoAPI.csproj",
-              "RelativeDocumentMoniker": "AlmoxarifadoAPI.csproj",
-              "ToolTip": "D:\\TrabalhoWebC#\\AlmoxarifadoAPI\\AlmoxarifadoAPI.csproj",
-              "RelativeToolTip": "AlmoxarifadoAPI.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-06-21T03:04:32.514Z",
+              "Title": "ProdutoLista.razor",
+              "DocumentMoniker": "D:\\Estudo\\C#\\GitHub\\AlmoxarifadoFront\\Pages\\ProdutoLista.razor",
+              "RelativeDocumentMoniker": "..\\AlmoxarifadoFront\\Pages\\ProdutoLista.razor",
+              "ToolTip": "D:\\Estudo\\C#\\GitHub\\AlmoxarifadoFront\\Pages\\ProdutoLista.razor",
+              "RelativeToolTip": "..\\AlmoxarifadoFront\\Pages\\ProdutoLista.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-21T19:02:04.807Z",
               "EditorCaption": ""
             },
             {
@@ -251,15 +80,132 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AlmoxarifadoLista.razor",
+              "DocumentMoniker": "D:\\Estudo\\C#\\GitHub\\AlmoxarifadoFront\\Pages\\AlmoxarifadoLista.razor",
+              "RelativeDocumentMoniker": "..\\AlmoxarifadoFront\\Pages\\AlmoxarifadoLista.razor",
+              "ToolTip": "D:\\Estudo\\C#\\GitHub\\AlmoxarifadoFront\\Pages\\AlmoxarifadoLista.razor",
+              "RelativeToolTip": "..\\AlmoxarifadoFront\\Pages\\AlmoxarifadoLista.razor",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAADAAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-21T18:46:16.854Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AlmoxarifadoManutencao.razor",
+              "DocumentMoniker": "D:\\Estudo\\C#\\GitHub\\AlmoxarifadoFront\\Pages\\AlmoxarifadoManutencao.razor",
+              "RelativeDocumentMoniker": "..\\AlmoxarifadoFront\\Pages\\AlmoxarifadoManutencao.razor",
+              "ToolTip": "D:\\Estudo\\C#\\GitHub\\AlmoxarifadoFront\\Pages\\AlmoxarifadoManutencao.razor",
+              "RelativeToolTip": "..\\AlmoxarifadoFront\\Pages\\AlmoxarifadoManutencao.razor",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAJQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-21T18:45:47.853Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "AlmoxarifadoController.cs",
-              "DocumentMoniker": "D:\\TrabalhoWebC#\\AlmoxarifadoAPI\\Controllers\\AlmoxarifadoController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AlmoxarifadoController.cs",
-              "ToolTip": "D:\\TrabalhoWebC#\\AlmoxarifadoAPI\\Controllers\\AlmoxarifadoController.cs",
-              "RelativeToolTip": "Controllers\\AlmoxarifadoController.cs",
-              "ViewState": "AQIAAD8AAAAAAAAAAAAQwFoAAAAAAAAA",
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Estudo\\C#\\GitHub\\AlmoxarifadoFront\\Program.cs",
+              "RelativeDocumentMoniker": "..\\AlmoxarifadoFront\\Program.cs",
+              "ToolTip": "D:\\Estudo\\C#\\GitHub\\AlmoxarifadoFront\\Program.cs",
+              "RelativeToolTip": "..\\AlmoxarifadoFront\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-21T03:04:35.479Z",
+              "WhenOpened": "2024-06-21T18:44:58.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProdutoDTO.cs",
+              "DocumentMoniker": "D:\\Estudo\\C#\\GitHub\\AlmoxarifadoFront\\DTO\\ProdutoDTO.cs",
+              "RelativeDocumentMoniker": "..\\AlmoxarifadoFront\\DTO\\ProdutoDTO.cs",
+              "ToolTip": "D:\\Estudo\\C#\\GitHub\\AlmoxarifadoFront\\DTO\\ProdutoDTO.cs",
+              "RelativeToolTip": "..\\AlmoxarifadoFront\\DTO\\ProdutoDTO.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAcAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T18:42:27.041Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MyInputInt.razor.cs",
+              "DocumentMoniker": "D:\\Estudo\\C#\\GitHub\\AlmoxarifadoFront\\Components\\MyInputInt.razor.cs",
+              "RelativeDocumentMoniker": "..\\AlmoxarifadoFront\\Components\\MyInputInt.razor.cs",
+              "ToolTip": "D:\\Estudo\\C#\\GitHub\\AlmoxarifadoFront\\Components\\MyInputInt.razor.cs",
+              "RelativeToolTip": "..\\AlmoxarifadoFront\\Components\\MyInputInt.razor.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T18:40:22.899Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MyInputInt.razor",
+              "DocumentMoniker": "D:\\Estudo\\C#\\GitHub\\AlmoxarifadoFront\\Components\\MyInputInt.razor",
+              "RelativeDocumentMoniker": "..\\AlmoxarifadoFront\\Components\\MyInputInt.razor",
+              "ToolTip": "D:\\Estudo\\C#\\GitHub\\AlmoxarifadoFront\\Components\\MyInputInt.razor",
+              "RelativeToolTip": "..\\AlmoxarifadoFront\\Components\\MyInputInt.razor",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAowBEAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-21T18:39:49.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GenericValidator.cs",
+              "DocumentMoniker": "D:\\Estudo\\C#\\GitHub\\AlmoxarifadoFront\\DTO\\Validators\\GenericValidator.cs",
+              "RelativeDocumentMoniker": "..\\AlmoxarifadoFront\\DTO\\Validators\\GenericValidator.cs",
+              "ToolTip": "D:\\Estudo\\C#\\GitHub\\AlmoxarifadoFront\\DTO\\Validators\\GenericValidator.cs",
+              "RelativeToolTip": "..\\AlmoxarifadoFront\\DTO\\Validators\\GenericValidator.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAqwAsAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T18:27:03.914Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Validator.cs",
+              "DocumentMoniker": "D:\\Estudo\\C#\\GitHub\\AlmoxarifadoFront\\DTO\\Validators\\Validator.cs",
+              "RelativeDocumentMoniker": "..\\AlmoxarifadoFront\\DTO\\Validators\\Validator.cs",
+              "ToolTip": "D:\\Estudo\\C#\\GitHub\\AlmoxarifadoFront\\DTO\\Validators\\Validator.cs",
+              "RelativeToolTip": "..\\AlmoxarifadoFront\\DTO\\Validators\\Validator.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAgwB8AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T18:24:23.886Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ModeloDTO.cs",
+              "DocumentMoniker": "D:\\Estudo\\C#\\GitHub\\AlmoxarifadoFront\\DTO\\ModeloDTO.cs",
+              "RelativeDocumentMoniker": "..\\AlmoxarifadoFront\\DTO\\ModeloDTO.cs",
+              "ToolTip": "D:\\Estudo\\C#\\GitHub\\AlmoxarifadoFront\\DTO\\ModeloDTO.cs",
+              "RelativeToolTip": "..\\AlmoxarifadoFront\\DTO\\ModeloDTO.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAYwCMAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T18:15:41.879Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProdutoManutencao.razor",
+              "DocumentMoniker": "D:\\Estudo\\C#\\GitHub\\AlmoxarifadoFront\\Pages\\ProdutoManutencao.razor",
+              "RelativeDocumentMoniker": "..\\AlmoxarifadoFront\\Pages\\ProdutoManutencao.razor",
+              "ToolTip": "D:\\Estudo\\C#\\GitHub\\AlmoxarifadoFront\\Pages\\ProdutoManutencao.razor",
+              "RelativeToolTip": "..\\AlmoxarifadoFront\\Pages\\ProdutoManutencao.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAKoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-21T18:13:54.117Z",
               "EditorCaption": ""
             }
           ]
