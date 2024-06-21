@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "AlmoxarifadoFront",
   "resources": {
-    "hash": "sha256-nJl49tlElq4S4a1auRMew3hj/1XMY9YsOgde/yps2P8=",
+    "hash": "sha256-0fnZvC7buiwkyAvIziSC4KJL0GYjdTvbbx1tDmNgLao=",
     "jsModuleNative": {
       "dotnet.native.8.0.4.vcr8qiocy2.js": "sha256-ju0+XWE0ihz554eKEj0HQ8Opa61xpbUIaX5/MNo8we4="
     },
@@ -209,12 +209,12 @@
       "mscorlib.wasm": "sha256-VCfYgt1mcjITabSTosCDVZ+68ea3Z7kakTFaLNLG+18=",
       "netstandard.wasm": "sha256-YOZxxR9PM3Dltcijfb0Q4FD39DkWZbZ1e2ScbZDvWJ4=",
       "System.Private.CoreLib.wasm": "sha256-NrT1QkAzVU//2wgK9vXdq77lCGvLJ4IOZ+Aegesyanc=",
-      "AlmoxarifadoModel.wasm": "sha256-s3rdkL11uOUqArJGa6zsugAxQMR63MM+IDaTFpFf7WQ=",
-      "AlmoxarifadoFront.wasm": "sha256-xKJmTr3qGP5C2ZmkfscsatxZhzZhlwgDeR4i7uufm9k="
+      "AlmoxarifadoModel.wasm": "sha256-MrgVrHHZno0jLD7gz2lYGpPZZmxJFbI+o24s1iOSda0=",
+      "AlmoxarifadoFront.wasm": "sha256-1L7M3+4JZ2aLYUOLZ8t2+EyKH1g5Q9hMKDRIr44+o8M="
     },
     "pdb": {
-      "AlmoxarifadoModel.pdb": "sha256-F6JXO/ganYs6Gm9LyUOjqq5ryZAz99VGvxgsuAtZtck=",
-      "AlmoxarifadoFront.pdb": "sha256-PfbQvlrviHOODGGGSY3/Bcx5YmHRJE+zXHBMdtyL2uc="
+      "AlmoxarifadoModel.pdb": "sha256-csP1rhv/PmtRvxAovc1sCq/s0StxILc6WO2+x0P2nUg=",
+      "AlmoxarifadoFront.pdb": "sha256-67PRihGNPn08olpS37wkaE8J0TONSNg9NI0Rnh6CcbM="
     }
   },
   "cacheBootResources": true,

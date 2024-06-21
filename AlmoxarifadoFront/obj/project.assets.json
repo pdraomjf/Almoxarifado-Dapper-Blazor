@@ -2140,11 +2140,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Estudo\\C#\\GitHub\\AlmoxarifadoFront\\AlmoxarifadoFront.csproj",
+      "projectUniqueName": "D:\\Estudo\\C#\\GITGIT\\AlmoxarifadoFront\\AlmoxarifadoFront.csproj",
       "projectName": "AlmoxarifadoFront",
-      "projectPath": "D:\\Estudo\\C#\\GitHub\\AlmoxarifadoFront\\AlmoxarifadoFront.csproj",
+      "projectPath": "D:\\Estudo\\C#\\GITGIT\\AlmoxarifadoFront\\AlmoxarifadoFront.csproj",
       "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
-      "outputPath": "D:\\Estudo\\C#\\GitHub\\AlmoxarifadoFront\\obj\\",
+      "outputPath": "D:\\Estudo\\C#\\GITGIT\\AlmoxarifadoFront\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Administrador\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2161,8 +2161,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Estudo\\C#\\GitHub\\AlmoxarifadoModel\\AlmoxarifadoModel.csproj": {
-              "projectPath": "D:\\Estudo\\C#\\GitHub\\AlmoxarifadoModel\\AlmoxarifadoModel.csproj"
+            "D:\\Estudo\\C#\\GITGIT\\AlmoxarifadoModel\\AlmoxarifadoModel.csproj": {
+              "projectPath": "D:\\Estudo\\C#\\GITGIT\\AlmoxarifadoModel\\AlmoxarifadoModel.csproj"
             }
           }
         }
