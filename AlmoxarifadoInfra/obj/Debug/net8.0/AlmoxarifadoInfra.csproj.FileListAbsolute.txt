@@ -1,0 +1,11 @@
+D:\TrabalhoWebC#\AlmoxarifadoInfra\bin\Debug\net8.0\AlmoxarifadoInfra.deps.json
+D:\TrabalhoWebC#\AlmoxarifadoInfra\bin\Debug\net8.0\AlmoxarifadoInfra.dll
+D:\TrabalhoWebC#\AlmoxarifadoInfra\bin\Debug\net8.0\AlmoxarifadoInfra.pdb
+D:\TrabalhoWebC#\AlmoxarifadoInfra\obj\Debug\net8.0\AlmoxarifadoInfra.GeneratedMSBuildEditorConfig.editorconfig
+D:\TrabalhoWebC#\AlmoxarifadoInfra\obj\Debug\net8.0\AlmoxarifadoInfra.AssemblyInfoInputs.cache
+D:\TrabalhoWebC#\AlmoxarifadoInfra\obj\Debug\net8.0\AlmoxarifadoInfra.AssemblyInfo.cs
+D:\TrabalhoWebC#\AlmoxarifadoInfra\obj\Debug\net8.0\AlmoxarifadoInfra.csproj.CoreCompileInputs.cache
+D:\TrabalhoWebC#\AlmoxarifadoInfra\obj\Debug\net8.0\AlmoxarifadoInfra.dll
+D:\TrabalhoWebC#\AlmoxarifadoInfra\obj\Debug\net8.0\refint\AlmoxarifadoInfra.dll
+D:\TrabalhoWebC#\AlmoxarifadoInfra\obj\Debug\net8.0\AlmoxarifadoInfra.pdb
+D:\TrabalhoWebC#\AlmoxarifadoInfra\obj\Debug\net8.0\ref\AlmoxarifadoInfra.dll
