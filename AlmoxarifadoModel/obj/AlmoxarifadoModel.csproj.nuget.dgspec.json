@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\TrabalhoWebC#\\AlmoxarifadoModel\\AlmoxarifadoModel.csproj": {}
+    "D:\\Estudo\\C#\\TrabalhoFinal\\AlmoxarifadoModel\\AlmoxarifadoModel.csproj": {}
   },
   "projects": {
-    "D:\\TrabalhoWebC#\\AlmoxarifadoModel\\AlmoxarifadoModel.csproj": {
+    "D:\\Estudo\\C#\\TrabalhoFinal\\AlmoxarifadoModel\\AlmoxarifadoModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\TrabalhoWebC#\\AlmoxarifadoModel\\AlmoxarifadoModel.csproj",
+        "projectUniqueName": "D:\\Estudo\\C#\\TrabalhoFinal\\AlmoxarifadoModel\\AlmoxarifadoModel.csproj",
         "projectName": "AlmoxarifadoModel",
-        "projectPath": "D:\\TrabalhoWebC#\\AlmoxarifadoModel\\AlmoxarifadoModel.csproj",
-        "packagesPath": "C:\\Users\\vitor\\.nuget\\packages\\",
-        "outputPath": "D:\\TrabalhoWebC#\\AlmoxarifadoModel\\obj\\",
+        "projectPath": "D:\\Estudo\\C#\\TrabalhoFinal\\AlmoxarifadoModel\\AlmoxarifadoModel.csproj",
+        "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
+        "outputPath": "D:\\Estudo\\C#\\TrabalhoFinal\\AlmoxarifadoModel\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\vitor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Administrador\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -60,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

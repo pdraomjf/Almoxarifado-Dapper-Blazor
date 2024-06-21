@@ -1,0 +1,50 @@
+﻿@page "/almoxarifado"
+@using AlmoxarifadoFront.DTO
+@using AlmoxarifadoFront.Helpers
+@using System.Net.Http
+@using System.Text.Json
+@inject Api api
+
+<h1>Almoxarifado</h1>
+
+@if (Objetos == null)
+{
+    <p><strong>Carregando...</strong></p>
+}
+else
+{
+    <a href=@($"/almoxarifado/{Acoes.Inserir}") class="btn btn-primary">Inserir</a>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Empresa</th>
+                <th scope="col">CNPJ</th>
+                <th scope="col">Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var obj in Objetos)
+            {
+                <tr>
+                    <td>@obj.Empresa</td>
+                    <td>@obj.CNPJ</td>
+                    <td>
+                        <a href=@($"/almoxarifado/{Acoes.Consultar}/{obj.Id}") class="btn btn-secondary">Consultar</a>
+                        <a href=@($"/almoxarifado/{Acoes.Alterar}/{obj.Id}") class="btn btn-warning">Alterar</a>
+                        <a href=@($"/almoxarifado/{Acoes.Excluir}/{obj.Id}") class="btn btn-danger">Excluir</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+}
+
+@code {
+    private IList<AlmoxarifadoDTO>? Objetos { get; set; } = null;
+
+    protected override async Task OnInitializedAsync()
+    {
+        Objetos = await api.GetAsync<AlmoxarifadoDTO>("/api/almoxarifado");
+    }
+}

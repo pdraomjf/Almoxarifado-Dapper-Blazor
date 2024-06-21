@@ -1,0 +1,12 @@
+D:\Estudo\C#\TrabalhoFinal\AlmoxarifadoModel\bin\Debug\net8.0\AlmoxarifadoModel.deps.json
+D:\Estudo\C#\TrabalhoFinal\AlmoxarifadoModel\bin\Debug\net8.0\AlmoxarifadoModel.dll
+D:\Estudo\C#\TrabalhoFinal\AlmoxarifadoModel\bin\Debug\net8.0\AlmoxarifadoModel.pdb
+D:\Estudo\C#\TrabalhoFinal\AlmoxarifadoModel\obj\Debug\net8.0\AlmoxarifadoModel.GeneratedMSBuildEditorConfig.editorconfig
+D:\Estudo\C#\TrabalhoFinal\AlmoxarifadoModel\obj\Debug\net8.0\AlmoxarifadoModel.AssemblyInfoInputs.cache
+D:\Estudo\C#\TrabalhoFinal\AlmoxarifadoModel\obj\Debug\net8.0\AlmoxarifadoModel.AssemblyInfo.cs
+D:\Estudo\C#\TrabalhoFinal\AlmoxarifadoModel\obj\Debug\net8.0\AlmoxarifadoModel.csproj.CoreCompileInputs.cache
+D:\Estudo\C#\TrabalhoFinal\AlmoxarifadoModel\obj\Debug\net8.0\AlmoxarifadoModel.sourcelink.json
+D:\Estudo\C#\TrabalhoFinal\AlmoxarifadoModel\obj\Debug\net8.0\AlmoxarifadoModel.dll
+D:\Estudo\C#\TrabalhoFinal\AlmoxarifadoModel\obj\Debug\net8.0\refint\AlmoxarifadoModel.dll
+D:\Estudo\C#\TrabalhoFinal\AlmoxarifadoModel\obj\Debug\net8.0\AlmoxarifadoModel.pdb
+D:\Estudo\C#\TrabalhoFinal\AlmoxarifadoModel\obj\Debug\net8.0\ref\AlmoxarifadoModel.dll
